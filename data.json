@@ -1,0 +1,50 @@
+{
+      "projects": [
+        {
+          "id":0,
+          "project_name":"Random Quote Generator",
+          "description":"An app that displays random famous quotes each time a button is clicked.The  app also has function to change the background color on each click.",
+          "technologies":["HTML", "CSS", "JavaScript"],
+          "live_link":"https://findrandomquotes.netlify.com",
+          "github_link":"https://github.com/anwarulhaq123/Techdegree-Project-1",
+          "image_urls":["/static/images/project1.jpg", "/static/images/randomquote1.jpg", "/static/images/randomquote2.jpg", "/static/images/randomquote3.jpg"]
+        },
+        {
+          "id":1,
+          "project_name":"List Pagination and Filtering ",
+          "description":"Project can accept the list of students. Each page has clickable buttons on the bottom to get the new Page of students.Each page has 10 number of students.",
+          "technologies":["HTML", "CSS", "JavaScript"],
+          "live_link":"https://dopagination.netlify.com",
+          "github_link":"https://github.com/anwarulhaq123/Techdegree-Project-2",
+          "image_urls":["/static/images/project2.jpg", "/static/images/pagination1.jpg", "/static/images/pagination2.jpg","/static/images/pagination3.jpg"]
+        },
+        {
+          "id":2,
+          "project_name":"Interactive Form",
+          "description":"Forms are everywhere on the websites.This project is a based on a friendly and intrective web from.",
+          "technologies":["HTML", "CSS", "JavaScript", "JQuery"],
+          "live_link":"https://intrectiveform.netlify.com",
+          "github_link":"https://github.com/anwarulhaq123/Techdegree-Project-3",
+          "image_urls":["/static/images/project3.jpg", "/static/images/intrectiveform1.jpg", "/static/images/intrectiveform2.jpg","/static/images/intrectiveform3.jpg"]
+        },
+        {
+          "id":3,
+          "project_name":"OOP Game Show App",
+          "description":" A browser-based word guessing game 'Phrase Hunter'.To select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard",
+          "technologies":["HTML", "CSS", "JavaScript","JQuery"],
+          "live_link":"https://huntaphrase.netlify.com",
+          "github_link":"https://github.com/anwarulhaq123/Techdegree-Project-4",
+          "image_urls":["static/images/project4.jpg", "/static/images/phrasehunter1.jpg", "/static/images/phrasehunter2.jpg","/static/images/phrasehunter3.jpg"]
+        },
+        {
+          "id":4,
+          "project_name":"Public API Requests",
+          "description":"An app for a fictional company called Awesome Startup.A directory that obtains the data of each one from the third-party API \"The Random User Generator\". This app has the search function. By clicking on individual emloyee a card popup which shows the all information about employee.",
+          "technologies":["HTML", "CSS", "JavaScript", "JQuery", "AJAX"],
+          "live_link":"https://apirequest.netlify.com",
+          "github_link":"https://github.com/anwarulhaq123/Techdegree-Project-5",
+          "image_urls":["/static/images/project5.jpg", "/static/images/apirequest1.jpg" ,"/static/images/apirequest2.jpg","/static/images/apirequest3.jpg"]
+        }
+
+    ]
+}
