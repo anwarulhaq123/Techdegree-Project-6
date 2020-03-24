@@ -45,6 +45,7 @@ app.get('/project/:id', (req, res, next) => {
 app.use((req, res, next) => {
   const err = new Error('Not found');
   err.status = 404;
+ console.log("Sorry!This page not found");
   next(err);
 });
 
