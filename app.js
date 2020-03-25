@@ -52,7 +52,7 @@ app.get('*', function (req, res, next) {
 app.use((err, req, res, next) => {
 	console.log('Sorry! This page not Exist')
 	res.locals.error = err;
-	res.render('error'); //render error page
+	res.render('error'); 
 
 });
 
