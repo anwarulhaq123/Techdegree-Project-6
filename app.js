@@ -5,7 +5,8 @@ const app = express();
 // Required data.json 
 
 const {
-	projects} = require('./data.json');
+	projects
+} = require('./data.json');
 
 //Serve static files
 app.use('/static', express.static('public'));
@@ -27,36 +28,34 @@ app.get('/about', (req, res) => {
 //projects route
 app.get('/project/:id', (req, res, next) => {
 	const projectId = req.params.id;
-	if (projectId < projects.length) { //if choosen project id exist
+	if (projectId < projects.length) {
 		const project = projects.find(({
 			id
 		}) => id === +projectId);
 		res.render('project', {
 			project
 		});
-	}else{ 
-        let err = new Error('This Project not Exist');
-        err.statusCode = 404;
-        next(err);
+	} else {
+		let err = new Error('This Project not Exist');
+		err.statusCode = 404;
+		next(err);
 	}
 });
 
-// Error Message when user tries unknown page // Middleware
-app.use((req, res, next) => {
-  const err = new Error('Not found');
-  err.status = 404;
- console.log("Sorry!This page not found");
-  next(err);
+
+//The 404 Route for pages not exist //*Stack overflow* //
+app.get('*', function (req, res, next) {
+	let err = new Error('This Page not found');
+	err.statusCode = 404;
+	next(err);
+});
+app.use((err, req, res, next) => {
+	console.log('Sorry! This page not Exist')
+	res.locals.error = err;
+	res.render('error'); //render error page
+
 });
 
-// rendering the error page
-app.use((err, req, res, next) => {
-  res.locals.error = err;
-  res.status(err.status);
-  res.render('error');
-});
-			   
-	
 
 
 //Starting a server on port 3000
